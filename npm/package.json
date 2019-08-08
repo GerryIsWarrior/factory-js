@@ -1,0 +1,38 @@
+{
+  "name": "@sky/factory-js",
+  "version": "0.0.1",
+  "description": "Logical Management",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GerryIsWarrior/factory-js.git"
+  },
+  "keywords": [
+    "javaScript",
+    "Logic",
+    "Management"
+  ],
+  "author": "gerry.zhong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GerryIsWarrior/factory-js/issues"
+  },
+  "homepage": "https://github.com/GerryIsWarrior/factory-js#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.5.5"
+  }
+}
