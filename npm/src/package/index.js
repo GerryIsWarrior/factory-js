@@ -12,7 +12,7 @@ function isThrough(Temporary, config) {
   let temp = new Temporary(config.assembly)
   let output = {}
   for (let key in temp) {
-    if (config.through) {
+    if (config.through  === false) {
       if (temp.hasOwnProperty(key)) {
         output[key] = temp[key]
       }

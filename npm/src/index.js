@@ -29,5 +29,5 @@ export const getMateriel = function (param) {
   } else {
     output = _globalCache
   }
-  return _globalCache
+  return output
 }

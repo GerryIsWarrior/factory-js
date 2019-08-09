@@ -21,6 +21,7 @@ class Atom {
         Object.assign(output, this[x])
       })
     }
+    return output
   }
 
 }
