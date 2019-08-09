@@ -2,7 +2,7 @@
   "name": "@sky/factory-js",
   "version": "0.0.1",
   "description": "Logical Management",
-  "private": true,
+  "main":"dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.config.js"
@@ -14,7 +14,8 @@
   "keywords": [
     "javaScript",
     "Logic",
-    "Management"
+    "Management",
+    "factory"
   ],
   "author": "gerry.zhong",
   "license": "MIT",
