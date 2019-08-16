@@ -1,4 +1,4 @@
-import {injection, getMateriel} from '../../npm/src/index'
+import {injection, getMateriel} from '@fines/factory-js'
 
 import atom1 from './atom/atom1'
 import atom2 from './atom/atom2'
@@ -10,4 +10,10 @@ injection({
   package: [package1, package2]
 })
 
-console.warn('123', getMateriel())
+console.warn('组装成功：', getMateriel())
+
+// 测试package1方法
+getMateriel('package1').getAtom1Promise()
+
+// 测试package2方法
+getMateriel('package2').packageLogin()

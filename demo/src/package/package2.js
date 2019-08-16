@@ -1,6 +1,5 @@
 export default {
   name: 'package2',
-  through: false,
   assembly: {
     packageLogin() {
       this.sendRequest()

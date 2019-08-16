@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@fines/factory-js": "0.0.2",
+    "@fines/factory-js": "0.0.3",
     "axios": "^0.19.0"
   },
   "devDependencies": {
