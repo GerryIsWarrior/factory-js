@@ -10,7 +10,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Hot Module Replacement'
+      title: '逻辑管理测试',
+      template: './index.html'
     }),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin()
