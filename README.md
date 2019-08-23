@@ -1,4 +1,8 @@
-# factory-js
+# 前端逻辑管理解决方案 factory-js (仅支持npm安装)
+
+### you can
+
+    npm i @fines/factory-js / yarn add @fines/factory-js
 
 ### 切入思考点       
 
