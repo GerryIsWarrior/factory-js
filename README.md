@@ -66,7 +66,7 @@
 
 ### 理想设计架构图
 
-   ![](https://intranetproxy.alipay.com/skylark/lark/0/2019/png/135798/1560499414766-8f26cae4-6e44-46d5-9c9a-5842d8c412ad.png)
+   ![](https://user-gold-cdn.xitu.io/2019/8/23/16cbde53ab073e42?w=650&h=606&f=png&s=38276)
 
 ### 简单摸索设计思路
 
