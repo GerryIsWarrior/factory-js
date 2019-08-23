@@ -66,7 +66,7 @@
 
 ### 理想设计架构图
 
-   ![](https://user-gold-cdn.xitu.io/2019/8/23/16cbde53ab073e42?w=650&h=606&f=png&s=38276)
+   ![](https://pic4.zhimg.com/80/v2-9cb608db6a30a2797a903a6e3c23703b_hd.jpg)
 
 ### 简单摸索设计思路
 
@@ -79,7 +79,7 @@
 
 思路图如下：
 
-   ![](https://img2018.cnblogs.com/blog/801930/201908/801930-20190823162110919-1128020485.png)
+   ![](https://pic2.zhimg.com/80/v2-047aa677fef2ba28ae50b51b2e0c02e9_hd.jpg)
    
 ### 基类设计代码
 
@@ -413,7 +413,7 @@ __index.js__
 
 ##### 测试结果    
 
-  ![](https://img2018.cnblogs.com/blog/801930/201908/801930-20190822142445614-1964339614.png)
+  ![](https://pic3.zhimg.com/80/v2-62e6b21f7c3eb2c6fc60e2de210ad7ea_hd.jpg)
 
 ### npm发布
 
