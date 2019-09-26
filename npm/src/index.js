@@ -14,7 +14,26 @@ let _globalCache = {}
 *     param： 配置参数
 * */
 export const injection = function (param) {
-  _atom.setBasics(param.atom)
+
+  // 注入原子，对于可直接注入的原子，直接注入原子管理类，二级原子等待生产完成再注入原子
+  param.atom.forEach((x, index) => {
+    if (index !== 0) {
+      let temp = []
+      param.atom[index].forEach(x => {
+        let prototype = _atom.machiningBasics(x.extends)
+        // 将生产结束的高级原子，注入到原子管理类
+        temp.push({
+          name: x.name,
+          assembly: _package.setPackage(x, prototype, true)
+        })
+      })
+      _atom.setBasics(temp)
+    }
+    else {
+      _atom.setBasics(param.atom[index])
+    }
+  })
+
 
   param.package.forEach(x => {
     let prototype = _atom.machiningBasics(x.extends)

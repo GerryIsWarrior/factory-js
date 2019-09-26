@@ -56,7 +56,9 @@ class Package {
   *
   *   return  生产完成的对象
   * */
-  setPackage(config, prototype) {
+  setPackage(config, prototype, noThrough) {
+    // 原子组装，默认不透传
+    if (noThrough) config.through = false
     let temp = makeObject(config)
     temp.prototype = prototype
     return isThrough(temp, config)
