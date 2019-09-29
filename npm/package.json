@@ -1,6 +1,6 @@
 {
   "name": "@fines/factory-js",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "Logical Management",
   "main": "dist/index.js",
   "scripts": {
