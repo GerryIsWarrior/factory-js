@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
-  entry: './src/index',
+  entry: './index',
   devServer: {
     contentBase: './dist',
     hot: true
