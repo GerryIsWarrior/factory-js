@@ -9,7 +9,7 @@
 <br/>
 ### blog更新
 [1. 逻辑管理 - 关于前端逻辑管理的设计和实现](https://github.com/GerryIsWarrior/factory-js/blob/master/blog/1.%20%E9%80%BB%E8%BE%91%E7%AE%A1%E7%90%86%20-%20%E5%85%B3%E4%BA%8E%E5%89%8D%E7%AB%AF%E9%80%BB%E8%BE%91%E7%AE%A1%E7%90%86%E7%9A%84%E8%AE%BE%E8%AE%A1%E5%92%8C%E5%AE%9E%E7%8E%B0.md)       
-[2. 逻辑管理 - 组装原子和原子共存，共建上层输出逻辑](https://github.com/GerryIsWarrior/factory-js/blob/master/blog/1.%20%E9%80%BB%E8%BE%91%E7%AE%A1%E7%90%86%20-%20%E5%85%B3%E4%BA%8E%E5%89%8D%E7%AB%AF%E9%80%BB%E8%BE%91%E7%AE%A1%E7%90%86%E7%9A%84%E8%AE%BE%E8%AE%A1%E5%92%8C%E5%AE%9E%E7%8E%B0.md)
+[2. 逻辑管理 - 组装原子和原子共存，共建上层输出逻辑](https://github.com/GerryIsWarrior/factory-js/blob/master/blog/2.%20%E9%80%BB%E8%BE%91%E7%AE%A1%E7%90%86%20-%20%E7%BB%84%E8%A3%85%E5%8E%9F%E5%AD%90%E5%92%8C%E5%8E%9F%E5%AD%90%E5%85%B1%E5%AD%98%EF%BC%8C%E5%85%B1%E5%BB%BA%E4%B8%8A%E5%B1%82%E8%BE%93%E5%87%BA%E9%80%BB%E8%BE%91.md)
 
 ### 配置文档
 待完善
