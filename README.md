@@ -8,18 +8,19 @@
 此解决方案是为了摸索出一个逻辑管理的统一解决方案，使用者只管注入逻辑，解决方案帮忙管理和产出所需逻辑。现落地到JavaScript中，该思想理论上可以落地到任何语言。
 <br/>
 ### blog更新
-> [1. 逻辑管理 - 关于前端逻辑管理的设计和实现](https://github.com/GerryIsWarrior/factory-js/blob/master/blog/1.%20%E9%80%BB%E8%BE%91%E7%AE%A1%E7%90%86%20-%20%E5%85%B3%E4%BA%8E%E5%89%8D%E7%AB%AF%E9%80%BB%E8%BE%91%E7%AE%A1%E7%90%86%E7%9A%84%E8%AE%BE%E8%AE%A1%E5%92%8C%E5%AE%9E%E7%8E%B0.md)       
-> [2. 逻辑管理 - 组装原子和原子共存，共建上层输出逻辑](https://github.com/GerryIsWarrior/factory-js/blob/master/blog/1.%20%E9%80%BB%E8%BE%91%E7%AE%A1%E7%90%86%20-%20%E5%85%B3%E4%BA%8E%E5%89%8D%E7%AB%AF%E9%80%BB%E8%BE%91%E7%AE%A1%E7%90%86%E7%9A%84%E8%AE%BE%E8%AE%A1%E5%92%8C%E5%AE%9E%E7%8E%B0.md)
-<br/>
-### 配置文档
+[1. 逻辑管理 - 关于前端逻辑管理的设计和实现](https://github.com/GerryIsWarrior/factory-js/blob/master/blog/1.%20%E9%80%BB%E8%BE%91%E7%AE%A1%E7%90%86%20-%20%E5%85%B3%E4%BA%8E%E5%89%8D%E7%AB%AF%E9%80%BB%E8%BE%91%E7%AE%A1%E7%90%86%E7%9A%84%E8%AE%BE%E8%AE%A1%E5%92%8C%E5%AE%9E%E7%8E%B0.md)       
+[2. 逻辑管理 - 组装原子和原子共存，共建上层输出逻辑](https://github.com/GerryIsWarrior/factory-js/blob/master/blog/1.%20%E9%80%BB%E8%BE%91%E7%AE%A1%E7%90%86%20-%20%E5%85%B3%E4%BA%8E%E5%89%8D%E7%AB%AF%E9%80%BB%E8%BE%91%E7%AE%A1%E7%90%86%E7%9A%84%E8%AE%BE%E8%AE%A1%E5%92%8C%E5%AE%9E%E7%8E%B0.md)
 
+<br/>
+
+### 配置文档
 待完善
 <br/>
+
 ### 理想设计图
 ![](https://github.com/GerryIsWarrior/fileCache/blob/master/image/%E7%90%86%E6%83%B3%E8%AE%BE%E8%AE%A1%E5%9B%BE.png)
 <br/>
 ### 使用教程
-
 待完善
 <br/>
 ### 支持信息
