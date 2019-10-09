@@ -10,10 +10,14 @@ injection({
   package: [package1, package2]
 })
 
-console.warn('组装成功：', getMateriel())
+export default {
+  testFun: function () {
+    console.warn('组装成功：', getMateriel())
 
-// 测试package1方法
-getMateriel('package1').getAtom1Promise()
+    // 测试package1方法
+    getMateriel('package1').getAtom1Promise()
 
-// 测试package2方法
-getMateriel('package2').packageLogin()
+    // 测试package2方法
+    getMateriel('package2').packageLogin()
+  }
+}

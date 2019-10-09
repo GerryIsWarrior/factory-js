@@ -1,5 +1,4 @@
 import {injection, getMateriel} from '@fines/factory-js'
-// import {injection, getMateriel} from '../../npm/dist/index'
 
 import config from './atom/one/config'
 import mock from './atom/one/mock'
