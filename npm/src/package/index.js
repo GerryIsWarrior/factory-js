@@ -1,3 +1,8 @@
+import errInfo from '../util/error.js'
+import checkFn from '../util/check.js'
+import template from '../util/template.js'
+import data from '../util/data.js'
+
 // 因ES6不支持私有属性，所以将私有属性放到外层
 
 /*
@@ -31,14 +36,43 @@ function isThrough(Temporary, config) {
   // 根据配置，实例化对象
   let temp = new Temporary(config.assembly)
   let output = {}
+  // 获取原子是否重复映射关系
+  const atomMapping = template.getValue('atomMapping')
   for (let key in temp) {
     // 是否开启配置
-    if (config.through  === false) {
+    if (config.through === false) {
       // 是否是自身属性
       if (temp.hasOwnProperty(key)) {
         output[key] = temp[key]
       }
-    } else {
+    } else if (checkFn.isArray(config.through)) {
+      if (temp.hasOwnProperty(key)) {
+        output[key] = temp[key]
+      } else {
+        config.through.forEach(x => {
+          let keyThough = Object.keys(x)[0]
+          x[keyThough].forEach(y => {
+            // 判断through配置中的对象，原子是否已经继承
+            if (config.extends === undefined || config.extends === keyThough || config.extends.indexOf(keyThough) > -1) {
+              if (atomMapping[y]) {
+                if (atomMapping[y].length > 1) {
+                  if (output[y]) {
+                    output[y][keyThough] = temp[y][keyThough]
+                  } else {
+                    output[y] = {}
+                    output[y][keyThough] = temp[y][keyThough]
+                  }
+                } else {
+                  output[y] = temp[y]
+                }
+              }
+            } else {
+              throw new Error(data.replaceData(errInfo.NO_EXTEND_THROUGH, ['__', '~~'], [config.name, key]))
+            }
+          })
+        })
+      }
+    } else if (config.through === true) {
       output[key] = temp[key]
     }
   }
