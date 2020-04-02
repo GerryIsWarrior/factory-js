@@ -1,9 +1,18 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
+console.log('zq', process.argv[3])
+// console.log('zq', global)
+
+const entryPath = {
+  v1: './demo_v1/index',
+  v2: './demo_v2/index',
+  v3: './demo_v3/index',
+}
+
 
 module.exports = {
-  entry: './index',
+  entry: entryPath[process.argv[3]],
   devServer: {
     contentBase: './dist',
     hot: true

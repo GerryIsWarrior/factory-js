@@ -2,9 +2,10 @@ export default {
   name: 'package2',
   assembly: {
     packageLogin() {
+      let that = this
       this.sendRequest()
         .then(x => {
-          console.warn('判断是否是数组：', this.judgeArray(x))
+          console.log('是否是数组：', that.judgeArray(x))
         })
     }
   }

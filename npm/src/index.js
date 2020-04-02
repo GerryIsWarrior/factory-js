@@ -1,5 +1,6 @@
 import Atom from './atom/index'
 import Package from './package/index'
+import config from './util/config'
 
 // 实例化原子和组装类
 const _atom = new Atom()
@@ -17,28 +18,32 @@ export const injection = function (param) {
 
   // 注入原子，对于可直接注入的原子，直接注入原子管理类，二级原子等待生产完成再注入原子
   param.atom.forEach((x, index) => {
+    // let atomConfig = Object.assign(config.atom, x)
     if (index !== 0) {
       let temp = []
-      param.atom[index].forEach(x => {
-        let prototype = _atom.machiningBasics(x.extends)
+      param.atom[index].forEach(y => {
+        let atomConfig = Object.assign({}, config.atom, y)
+        let prototype = _atom.machiningBasics(atomConfig.extends)
         // 将生产结束的高级原子，注入到原子管理类
         temp.push({
-          name: x.name,
-          assembly: _package.setPackage(x, prototype, true)
+          name: atomConfig.name,
+          assembly: _package.setPackage(atomConfig, prototype, true)
         })
       })
       _atom.setBasics(temp)
-    }
-    else {
-      _atom.setBasics(param.atom[index])
+    } else {
+      _atom.setBasics(param.atom[index].map(z=>{
+        return Object.assign({}, config.atom, z)
+      }))
     }
   })
 
 
   param.package.forEach(x => {
-    let prototype = _atom.machiningBasics(x.extends)
+    let packageConfig = Object.assign({}, config.package, x)
+    let prototype = _atom.machiningBasics(packageConfig.extends)
     // 缓存组装
-    _globalCache[x.name] = _package.setPackage(x, prototype)
+    _globalCache[packageConfig.name] = _package.setPackage(packageConfig, prototype)
   })
 }
 
