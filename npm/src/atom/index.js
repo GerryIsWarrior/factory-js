@@ -27,6 +27,7 @@ function assignObj(target, source, current) {
       target[key][current] = source[key]
     }
   }
+  console.warn('atomMapping', atomMapping)
 }
 
 class Atom {

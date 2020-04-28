@@ -16,7 +16,11 @@ import data from '../util/data.js'
 function makeObject() {
   function Temporary(assembly) {
     for (let key in assembly) {
-      this[key] = assembly[key].bind(this)
+      if (checkFn.isFunction(assembly[key])) {
+        this[key] = assembly[key].bind(this)
+      } else {
+        this[key] = assembly[key]
+      }
     }
   }
 
@@ -32,7 +36,7 @@ function makeObject() {
 *   return
 *     output：输出最终逻辑
 * */
-function isThrough(Temporary, config) {
+function throughProperties(Temporary, config) {
   // 根据配置，实例化对象
   let temp = new Temporary(config.assembly)
   let output = {}
@@ -95,7 +99,7 @@ class Package {
     if (noThrough) config.through = false
     let temp = makeObject(config)
     temp.prototype = prototype
-    return isThrough(temp, config)
+    return throughProperties(temp, config)
   }
 
 }
